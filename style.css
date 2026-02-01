@@ -1,97 +1,143 @@
+/* Configurações Gerais */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #f4f6f8;
-  color: #333;
-  line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 .container {
-  width: 90%;
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-.hero {
-  background: linear-gradient(135deg, #4CAF50, #2e7d32);
-  color: white;
-  padding: 80px 0;
+/* Header / Headline */
+.header-section {
+    background-color: #1a3d2f; /* Verde Escuro */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
 }
 
-.subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+.highlight-yellow {
+    color: #ffd700;
 }
 
-.btn-primary {
-  background-color: #ff9800;
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
-  display: inline-block;
+.sub-headline {
+    font-size: 1.2rem;
+    color: #e0e0e0;
 }
 
-.btn-primary:hover {
-  background-color: #fb8c00;
+/* Seção do Produto */
+.product-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 20px;
+    flex-wrap: wrap;
 }
 
-.section {
-  padding: 60px 0;
+.product-image img {
+    max-width: 100%;
+    height: auto;
 }
 
-.section.light {
-  background-color: white;
+.check-list ul {
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.section.highlight {
-  background-color: #e8f5e9;
+.check-list li {
+    margin-bottom: 15px;
 }
 
-h2 {
-  margin-bottom: 20px;
+/* Faixa Laranja */
+.orange-divider {
+    background: linear-gradient(90deg, #ff8c00, #ff4500);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
 }
 
-.problems,
-.benefits {
-  list-style: none;
-  margin-top: 20px;
+/* Benefícios */
+.benefits-section {
+    background-color: #2d5a44; /* Verde Médio */
+    color: white;
+    padding: 30px 20px;
 }
 
-.problems li,
-.benefits li {
-  margin: 10px 0;
-  font-size: 1.1rem;
+.benefits-section ul {
+    list-style: none;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.price {
-  font-size: 2.5rem;
-  color: #2e7d32;
-  margin: 20px 0;
-  font-weight: bold;
+.benefits-section li {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(255,255,255,0.2);
 }
 
-.guarantee {
-  margin-top: 15px;
-  font-size: 0.9rem;
-  color: #555;
+/* Botão CTA */
+.cta-container {
+    text-align: center;
+    padding: 50px 20px;
 }
 
-.footer {
-  background-color: #222;
-  color: #ccc;
-  padding: 20px 0;
-  font-size: 0.8rem;
+.btn-cta {
+    display: inline-block;
+    background: #ff4500;
+    color: white;
+    padding: 20px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 900;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.btn-cta:hover {
+    transform: scale(1.05);
+    background: #e63e00;
+}
+
+/* Footer */
+.footer-trust {
+    padding: 20px;
+    background: #f9f9f9;
+    border-top: 2px solid #ddd;
+    text-align: center;
+}
+
+.trust-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 600px) {
+    h1 { font-size: 1.6rem; }
+    .product-section { flex-direction: column; }
+    .btn-cta { font-size: 1.1rem; }
 }
