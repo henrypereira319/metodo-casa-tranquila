@@ -1,1 +1,0 @@
-# metodo-casa-tranquila
